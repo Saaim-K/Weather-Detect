@@ -1,9 +1,7 @@
 //-------------------- Variables Declared on Global Level --------------------
 let access = document.getElementById('access');
 let allDetails;
-let subName;
 let city;
-let suburbName;
 //-------------------- Variables Declared on Global Level --------------------
 
 //-------------------------------------------------- Location On Click -------------------------------------------------- 
@@ -18,7 +16,6 @@ window.onload = function getLocation() {
     else {
         access.innerHTML = "Geolocation is not supported by this browser."
     }
-
 }
 
 //-------------------- Function Running Two Parameters (onSuccess, onError) --------------------
@@ -34,18 +31,12 @@ function onSuccess(position) {
         .then(response => response.json()).then(result => {
             allDetails = result.results[0].components;//getting the details of the location
             console.table(allDetails);
-            let { town, city, state, country, suburb, country_code } = allDetails;//getting the details of the location
-            // access.innerHTML = `${town} , ${city} , ${state} , ${country} kutta hoon main nahin<br>`
-            // console.log(town, city, state, country);
-            //document.write(`${town} , ${city} , ${state} , ${country} `) ;
+            let { city } = allDetails;//getting the details of the location
             city = city;
-            suburbName = suburb;
-            subName = country_code;
             access.innerHTML = "";
             //-------------------- Fetching Location Using API --------------------
 
             //-------------------- Fetching Weather Using API --------------------
-            // Make a request for a user to enter City Name
             axios.get(`https://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${city}`)
                 .then(function (response) {
                     console.log(response.data);
