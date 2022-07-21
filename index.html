@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ------------------------------ Animate.CSS ------------------------------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ------------------------------ Animate.CSS ------------------------------ -->
+
+    <!-- ------------------------------ Font Awesom JS ------------------------------ -->
+    <script src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
+    <!-- ------------------------------ Font Awesom JS ------------------------------ -->
+
+    <!-- ------------------------------ JQuery ------------------------------ -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- ------------------------------ JQuery ------------------------------ -->
+
+    <!-- ------------------------------ Axios Library ------------------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- ------------------------------ Axios Library ------------------------------ -->
+
+
+</head>
+
+<body>
+
+    <div id="particles-js">
+        <!-- ------------------------------ Dark Mode Toggler ------------------------------ -->
+        <div id="dark">
+            <input id="checkbox" type="checkbox" class="checkbox">
+            <label id="label" for="checkbox" class="label">
+                <img class="sun" src="images/icons8-sun.gif" title="Enable Light Mode ">
+                <img class="moon" src="images/icons8-night.gif" title="Enable Dark Mode ">
+                <div id="ball" class='ball'></div>
+            </label>
+        </div>
+        <!-- ------------------------------ Dark Mode Toggler ------------------------------ -->
+
+
+        <!-- ------------------------------ Navbar ------------------------------ -->
+        <nav>
+            <h2 id="nav-head" class="animate__animated animate__lightSpeedInRight">WeatherGuide
+                <img id="sun-moon" src="images/icons8-sun-moon.gif">
+            </h2>
+            <span id="current-time"></span>
+        </nav>
+        <!-- ------------------------------ Navbar ------------------------------ -->
+
+
+        <!-- ------------------------------ Form Input  ------------------------------ -->
+        <div class="field">
+            <input id="input_city" type="text" placeholder="Enter Location" required>
+            <i id="input_location" class="fa-solid fa-location-dot"></i>
+            <!-- Onclick LAgega -->
+            <button id="input-button-1" class="btn-1">
+                <i class="fa fa-light fa-magnifying-glass"></i>
+            </button>
+            <button id="input-button-2" class="btn-1" onclick="getLocation()">
+                <i class="fa fa-thin fa-location-crosshairs"></i>
+            </button>
+            <!-- Onclick LAgega -->
+        </div>
+        <!-- ------------------------------ Form Input  ------------------------------ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="access"></div>
+        <div id="mainDiv">
+            <div id="city" title="City"></div>
+            <div id="country" title="Country"></div>
+            <div id="region" title="Region"></div>
+            <div id="temp-f" title="temp"></div>
+            <div id="condition" title="condition"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+<!-- ------------------------------ MAIN JAVASCRIPT ------------------------------ -->
+
+<!-- --------------- Particles.js --------------- -->
+<script src="particles.js"></script>
+<script src="script.js"></script>
+<!-- --------------- Particles.js --------------- -->
+
+<!-- --------------- My Dark Mode Javascript --------------- -->
+<script src="dark-mode.js"></script>
+<!-- --------------- My Dark Mode Javascript --------------- -->
+
+<!-- --------------- My Dark Mode Javascript --------------- -->
+<script src="app.js"></script>
+<!-- --------------- My Dark Mode Javascript --------------- -->
+<!-- ------------------------------ MAIN JAVASCRIPT ------------------------------ -->
+
+</html>

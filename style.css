@@ -1,0 +1,252 @@
+    /* ------------------------------ Google Fonts ------------------------------ */
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    /* ------------------------------ Google Fonts ------------------------------ */
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    /* ------------------------------ Root Elements ------------------------------ */
+    :root {
+        --light-theme: linear-gradient(320deg, #85a3ce 0%, #f5dadf 74%);
+        --dark-theme: linear-gradient(#2c3e50 10%, #000 74%);
+    }
+
+    /* ------------------------------ Root Elements ------------------------------ */
+
+
+
+    /* ------------------------------ Body With Particles.js ------------------------------ */
+    body {
+        background: var(--light-theme);
+        background-attachment: fixed;
+    }
+
+    /* ------------------------------ Body With Particles.js ------------------------------ */
+
+
+
+    /* ------------------------------ Dark Mode Toggler ------------------------------ */
+
+    #dark {
+        position: fixed;
+        bottom: 4%;
+        right: 2%;
+    }
+
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .label {
+        width: 60px;
+        height: 18px;
+        background: var(--light-theme);
+        display: flex;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+
+    .ball {
+        width: 24px;
+        height: 24px;
+        background-color: white;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+
+    .moon,
+    .sun {
+        height: 18px;
+        margin: 2px;
+    }
+
+    body.dark {
+        background: var(--dark-theme);
+        color: #fff;
+        background-attachment: fixed;
+
+    }
+
+    .label.dark {
+        background: var(--dark-theme);
+    }
+
+    .checkbox:checked+.label .ball {
+        transform: translateX(40px);
+    }
+
+    /* ------------------------------ Dark Mode Toggler ------------------------------ */
+
+
+
+    /* ------------------------------ Navbar ------------------------------ */
+    nav h2 {
+        font-weight: 900;
+        text-transform: uppercase;
+        position: absolute;
+        left: 41%;
+        border-bottom: 2px solid black;
+        font-size: 29px;
+    }
+
+    #nav-head.dark {
+        border-bottom: 2px solid white;
+    }
+
+    #sun-moon {
+        height: 30px;
+        margin-top: 10px;
+        border-bottom: none;
+    }
+
+    #current-time {
+        position: absolute;
+        right: 7%;
+        top: 3%;
+        font-size: 25px;
+        /* margin-top: 10px; */
+    }
+
+    /* ------------------------------ Navbar ------------------------------ */
+
+    /* ------------------------------ Input ------------------------------ */
+    .field {
+        height: 35px;
+        width: 290px;
+        display: flex;
+        position: absolute;
+        top: 10%;
+        right: 1%;
+    }
+
+    button {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        padding: 5px 10px;
+        border: none;
+        outline: 0.5px solid grey;
+        background: transparent;
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+    .text {
+        font-size: 33px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        color: black;
+    }
+
+    .field input {
+        height: 100%;
+        width: 100%;
+        padding-left: 30px;
+        outline: 0.5px solid grey;
+        border: none;
+        font-size: 18px;
+        background: transparent;
+        color: black;
+        border-radius: 25px;
+    }
+
+    .field input::placeholder {
+        color: black;
+        font-size: medium;
+    }
+
+    .field .fa-location-dot {
+        position: absolute;
+        color: black;
+        width: 35px;
+        line-height: 35px;
+        padding-left: 10px;
+    }
+
+    #input_city.dark {
+        color: white;
+    }
+
+    #input-button-1.dark {
+        color: white;
+        outline: white 0.5px solid;
+    }
+
+    #input-button-2.dark {
+        color: white;
+        outline: white 0.5px solid;
+    }
+
+
+    #input_location.dark {
+        color: white;
+    }
+
+    /* ------------------------------ input ------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #access {
+        font-size: 60px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #mainDiv {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        align-items: center;
+    }
+
+    #city {
+        font-size: 55px;
+        font-weight: 900;
+    }
+
+    #city_location {
+        font-size: 15px;
+        position: relative;
+        top: -35px;
+    }
