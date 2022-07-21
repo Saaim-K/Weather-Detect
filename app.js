@@ -56,7 +56,7 @@ function onSuccess(position) {
 
             //-------------------- Fetching Weather Using API --------------------
             // Make a request for a user to enter City Name
-            axios.get(`http://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${city}`)
+            axios.get(`https://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${city}`)
                 .then(function (response) {
                     console.log(response.data);
                     document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name}`;
