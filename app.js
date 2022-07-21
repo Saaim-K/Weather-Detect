@@ -56,7 +56,7 @@ function onSuccess(position) {
 
 
 
-                    document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name} <sub class="subscript">${response.data.location.country}</sub>`;
+                    document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name}`;
                     document.getElementById('temp-f').innerHTML = response.data.current.temp_c + "°C";
                     document.getElementById('condition').innerHTML = response.data.current.condition.text;
                     // document.getElementById('feel').innerHTML = response.data.current.feelslike_c + '°C';

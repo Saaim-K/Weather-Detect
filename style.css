@@ -164,6 +164,7 @@
         color: black;
         border-radius: 25px;
         margin-right: 5px;
+        text-transform: capitalize;
     }
 
     .field input::placeholder {
@@ -246,12 +247,14 @@
         top: -35px;
     }
 
-    .subscript {
-        font-size: 15px;
+    #temp-f {
+        font-size: 40px;
+        font-weight: 600;
     }
 
-    #temp-f {
-        font-size: 30px;
+    #condition{
+        font-size: 20px;
+        font-weight: 600;
     }
 
     .icondition {
