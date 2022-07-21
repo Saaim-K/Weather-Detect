@@ -4,29 +4,19 @@ let allDetails;
 let subName;
 let city;
 let suburbName;
-let flag = 0;
-let removeImg = document.getElementById('input-button-2');
-
 //-------------------- Variables Declared on Global Level --------------------
 
 //-------------------------------------------------- Location On Click -------------------------------------------------- 
 
 
 //-------------------- Function Running Two Parameters (onSuccess, onError) --------------------
-function getLocation() {
+window.onload = function getLocation() {
     if (navigator.geolocation) {
         access.innerHTML = "Allow to detect your location"
         navigator.geolocation.getCurrentPosition(onSuccess, onError);
     }
     else {
         access.innerHTML = "Geolocation is not supported by this browser."
-    }
-    flag++;
-    console.log(flag);
-    if (flag > 1) {
-        removeImg.removeAttribute('onclick');
-        alert('you can not click again' + '\n' + 'Refresh the page');
-        access.innerHTML = "";
     }
 
 }

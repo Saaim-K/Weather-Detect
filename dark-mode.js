@@ -7,7 +7,6 @@ checkbox.addEventListener('change', () => {
     document.getElementById('label').classList.toggle('dark');
     document.getElementById('nav-head').classList.toggle('dark');
     document.getElementById('input-button-1').classList.toggle('dark');
-    document.getElementById('input-button-2').classList.toggle('dark');
     document.getElementById('input_location').classList.toggle('dark');
     document.getElementById('input_city').classList.toggle('dark');
 })
