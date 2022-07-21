@@ -2,6 +2,7 @@
 let access = document.getElementById('access');
 let allDetails;
 let city;
+let icon;
 //-------------------- Variables Declared on Global Level --------------------
 
 //-------------------------------------------------- Location On Click -------------------------------------------------- 
@@ -40,8 +41,22 @@ function onSuccess(position) {
             axios.get(`https://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${city}`)
                 .then(function (response) {
                     console.log(response.data);
-                    document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name}`;
-                    document.getElementById('country').innerHTML = response.data.location.country;
+
+
+
+                    icon = response.data.current.condition.icon;
+                    icon.replace("/file// ");
+                    // console.log(icon);
+                    document.getElementById('icon').src = icon;
+
+
+
+
+
+
+
+
+                    document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name} <sub class="subscript">${response.data.location.country}</sub>`;
                     document.getElementById('temp-f').innerHTML = response.data.current.temp_c + "°C";
                     document.getElementById('condition').innerHTML = response.data.current.condition.text;
                     // document.getElementById('feel').innerHTML = response.data.current.feelslike_c + '°C';

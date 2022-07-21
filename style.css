@@ -229,7 +229,7 @@
     #mainDiv {
         position: absolute;
         width: 100%;
-        top: 25%;
+        top: 20%;
         display: flex;
         flex-direction: column;
         font-weight: bold;
@@ -237,12 +237,24 @@
     }
 
     #city {
-        font-size: 55px;
-        font-weight: 900;
+        font-size: 45px;
     }
 
     #city_location {
         font-size: 15px;
         position: relative;
         top: -35px;
+    }
+
+    .subscript {
+        font-size: 15px;
+    }
+
+    #temp-f {
+        font-size: 30px;
+    }
+
+    .icondition {
+        border: 2px solid red;
+        display: flex;
     }
