@@ -135,14 +135,14 @@
         height: 35px;
         width: 35px;
         border-radius: 50%;
-        padding: 5px 10px;
+        padding: 5px 15px;
         border: none;
         outline: 0.5px solid grey;
         background: transparent;
         font-size: 18px;
         color: black;
         cursor: pointer;
-        margin: 0 10px;
+        margin: 0 5px;
     }
 
     .text {
@@ -162,6 +162,7 @@
         background: transparent;
         color: black;
         border-radius: 25px;
+        margin-right: 5px;
     }
 
     .field input::placeholder {
@@ -181,16 +182,11 @@
         color: white;
     }
 
-    #input-button-1.dark {
-        color: white;
-        outline: white 0.5px solid;
-    }
-
+    #input-button-1.dark,
     #input-button-2.dark {
         color: white;
-        outline: white 0.5px solid;
+        outline: white 1px solid;
     }
-
 
     #input_location.dark {
         color: white;
