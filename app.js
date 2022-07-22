@@ -97,9 +97,9 @@ function getWeather() {
     axios.get(`http://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${input_city}`)
         .then(function (response) {
             console.log(response.data);
-            document.getElementById('city').innerHTML = response.data.location.name;
-            document.getElementById('country').innerHTML = response.data.location.country + "<br>";
-            document.getElementById('temp-f').innerHTML = response.data.current.temp_c + "°C" + "<br>";
+            document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name}`;
+            document.getElementById('temp-f').innerHTML = response.data.current.temp_c + "°C";
+            document.getElementById('condition').innerHTML = response.data.current.condition.text;
         })
     access.innerHTML = "";
 
