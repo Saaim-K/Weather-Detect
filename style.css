@@ -12,7 +12,7 @@
 
     /* ------------------------------ Root Elements ------------------------------ */
     :root {
-        --light-theme: linear-gradient(320deg, #85a3ce 0%, #f5dadf 74%);
+        --light-theme: linear-gradient(320deg, #455b77 0%, #f5cdd4 74%);
         --dark-theme: linear-gradient(#2c3e50 10%, #000 74%);
     }
 
