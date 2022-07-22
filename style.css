@@ -2,11 +2,13 @@
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
     /* ------------------------------ Google Fonts ------------------------------ */
 
+
     * {
         margin: 0;
         padding: 0;
         font-family: 'Quicksand', sans-serif;
     }
+
 
     /* ------------------------------ Root Elements ------------------------------ */
     :root {
@@ -17,7 +19,6 @@
     /* ------------------------------ Root Elements ------------------------------ */
 
 
-
     /* ------------------------------ Body With Particles.js ------------------------------ */
     body {
         background: var(--light-theme);
@@ -26,7 +27,6 @@
     }
 
     /* ------------------------------ Body With Particles.js ------------------------------ */
-
 
 
     /* ------------------------------ Dark Mode Toggler ------------------------------ */
@@ -91,7 +91,6 @@
     /* ------------------------------ Dark Mode Toggler ------------------------------ */
 
 
-
     /* ------------------------------ Navbar ------------------------------ */
     nav h2 {
         font-weight: 900;
@@ -121,6 +120,7 @@
     }
 
     /* ------------------------------ Navbar ------------------------------ */
+
 
     /* ------------------------------ Input ------------------------------ */
     .field {
@@ -196,9 +196,6 @@
     /* ------------------------------ input ------------------------------ */
 
 
-
-
-
     /* ------------------------------ Weather ------------------------------ */
 
     #access {
@@ -222,7 +219,7 @@
     }
 
     #city {
-        font-size: 50px;
+        font-size: 55px;
     }
 
     #city_location {
@@ -232,7 +229,7 @@
     }
 
     #temp-f {
-        font-size: 40px;
+        font-size: 45px;
         font-weight: 600;
     }
 
@@ -245,14 +242,34 @@
         display: flex;
     }
 
+    #secondDiv {
+        position: absolute;
+        bottom: 15%;
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+    }
+
+    #feel,
+    #humidity,
+    #wind,
+    #visibility {
+        font-size: 27px;
+        font-weight: 600;
+        text-align: center;
+        padding: 0px 30px;
+    }
+
+    #real-title,
+    #humidity-title,
+    #visibility-title,
+    #wind-title {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
     /* ------------------------------ Weather ------------------------------ */
-
-
-
-
-
-
-
-
-
-

@@ -5,6 +5,7 @@ let city;
 let icon;
 //-------------------- Variables Declared on Global Level --------------------
 
+
 //-------------------------------------------------- Weather Using Location -------------------------------------------------- 
 
 
@@ -42,35 +43,30 @@ function onSuccess(position) {
                 .then(function (response) {
                     console.log(response.data);
 
-
-
+            //-------------------- Weather Icon --------------------
                     icon = response.data.current.condition.icon;
                     icon.replace("/file// ");
                     // console.log(icon);
                     document.getElementById('icon').src = icon;
+            //-------------------- Weather Icon --------------------
 
-
-
-
-
-
-
-
+                    document.getElementById('real-title').innerHTML = 'Real Feel';
+                    document.getElementById('humidity-title').innerHTML = 'Humidity';
+                    document.getElementById('visibility-title').innerHTML = 'Visibility';
+                    document.getElementById('wind-title').innerHTML = `${response.data.current.wind_dir} Wind`;
                     document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name}`;
                     document.getElementById('temp-f').innerHTML = response.data.current.temp_c + "°C";
                     document.getElementById('condition').innerHTML = response.data.current.condition.text;
-                    // document.getElementById('feel').innerHTML = response.data.current.feelslike_c + '°C';
-                    // document.getElementById('wind').innerHTML = response.data.current.wind_kph + " km/h";
-                    // document.getElementById('wind_dir').innerHTML = response.data.current.wind_dir;
-                    // document.getElementById('humidity').innerHTML = response.data.current.humidity + "%";
-                    // document.getElementById('visiblity').innerHTML = response.data.current.vis_km + " km";
+                    document.getElementById('feel').innerHTML = response.data.current.feelslike_c + '°C';
+                    document.getElementById('wind').innerHTML = response.data.current.wind_kph + " km/h";
+                    document.getElementById('humidity').innerHTML = response.data.current.humidity + "%";
+                    document.getElementById('visibility').innerHTML = response.data.current.vis_km + " km";
                 })
             //-------------------- Fetching Weather Using API --------------------
         });
     access.innerHTML = "";
 
 }
-
 
 //-------------------- onError Parameter --------------------
 function onError(error) {
@@ -85,7 +81,9 @@ function onError(error) {
         access.innerHTML = "Something went wrong.";
     }
 }
+
 //-------------------- onError Parameter --------------------
+
 
 //-------------------------------------------------- Weather Using Location --------------------------------------------------
 
@@ -97,28 +95,21 @@ function getWeather() {
     axios.get(`http://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${input_city}`)
         .then(function (response) {
             console.log(response.data);
+            document.getElementById('real-title').innerHTML = 'Real Feel';
+            document.getElementById('humidity-title').innerHTML = 'Humidity';
+            document.getElementById('visibility-title').innerHTML = 'Visibility';
+            document.getElementById('wind-title').innerHTML = `${response.data.current.wind_dir} Wind`;
             document.getElementById('city').innerHTML = `<i id="city_location" class="fa-solid fa-location-dot"></i>${response.data.location.name}`;
             document.getElementById('temp-f').innerHTML = response.data.current.temp_c + "°C";
             document.getElementById('condition').innerHTML = response.data.current.condition.text;
+            document.getElementById('feel').innerHTML = response.data.current.feelslike_c + '°C';
+            document.getElementById('wind').innerHTML = response.data.current.wind_kph + " km/h";
+            document.getElementById('humidity').innerHTML = response.data.current.humidity + "%";
+            document.getElementById('visibility').innerHTML = response.data.current.vis_km + " km";
         })
     access.innerHTML = "";
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //-------------------------------------------------- Weather Using Search --------------------------------------------------
