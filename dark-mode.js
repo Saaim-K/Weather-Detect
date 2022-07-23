@@ -12,6 +12,7 @@ checkbox.addEventListener('change', () => {
 })
 // ------------------------------ Dark Mode Toggler ------------------------------
 
+
 // ------------------------------ Time Clock  ------------------------------
 setInterval(() => {
     const time = document.querySelector('#current-time');

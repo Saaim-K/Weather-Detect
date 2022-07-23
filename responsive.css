@@ -1,0 +1,475 @@
+    /* ------------------------------ Small Mobile ------------------------------ */
+
+    @media only screen and (max-width: 320px) {
+        #dark {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            bottom: 6%;
+        }
+
+        .label {
+            width: 50px;
+            height: 15px;
+            background: var(--light-theme);
+            padding: 5px;
+            position: relative;
+            transform: scale(1.5);
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            top: 2.5px;
+        }
+
+        .moon,
+        .sun {
+            height: 16px;
+            margin: 2px;
+        }
+
+        .checkbox:checked+.label .ball {
+            transform: translateX(33px);
+        }
+
+        nav h2 {
+            position: absolute;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            border: none;
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        #nav-head.dark {
+            border-bottom: none;
+        }
+
+        #sun-moon {
+            height: 25px;
+            margin-top: 3px;
+        }
+
+        #current-time {
+            visibility: hidden;
+        }
+
+        form {
+            height: 25px;
+            right: 3%;
+        }
+
+        button {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
+
+        form input {
+            font-size: 17px;
+        }
+
+        form .fa-location-dot {
+            position: absolute;
+            color: black;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        #access {
+            font-size: 23px;
+            text-align: center;
+        }
+
+        #mainDiv {
+            top: 30%;
+        }
+
+        #city {
+            font-size: 40px;
+        }
+
+        #city_location {
+            font-size: 13px;
+            top: -20px;
+        }
+
+        #temp-f {
+            font-size: 25px;
+        }
+
+        #condition {
+            font-size: 20px;
+        }
+
+        #secondDiv {
+            flex-wrap: wrap;
+            padding: 0px 5px;
+            justify-content: space-around;
+            bottom: 10%;
+        }
+
+        #feel,
+        #humidity,
+        #wind,
+        #visibility {
+            font-size: 25px;
+            padding: 0px 20px;
+            margin-top: 15px;
+        }
+
+        #real-title,
+        #humidity-title,
+        #visibility-title,
+        #wind-title {
+            margin-top: 5px;
+        }
+
+
+
+
+    }
+
+    /* ------------------------------ Small Mobile ------------------------------ */
+
+
+    /* ------------------------------ Medium Mobile ------------------------------ */
+
+    @media screen and (min-width: 321px) and (max-width: 375px) {
+        #dark {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            bottom: 3%;
+        }
+
+        .label {
+            width: 50px;
+            height: 15px;
+            background: var(--light-theme);
+            padding: 5px;
+            position: relative;
+            transform: scale(1.5);
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            top: 2.5px;
+        }
+
+        .moon,
+        .sun {
+            height: 16px;
+            margin: 2px;
+        }
+
+        .checkbox:checked+.label .ball {
+            transform: translateX(33px);
+        }
+
+        nav h2 {
+            position: absolute;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            border: none;
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        #nav-head.dark {
+            border-bottom: none;
+        }
+
+        #sun-moon {
+            height: 25px;
+            margin-top: 3px;
+        }
+
+        #current-time {
+            width: 100%;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            top: 7%;
+            right: 0;
+        }
+
+        form {
+            height: 25px;
+            top: 15%;
+            right: 0;
+            left: 50px;
+        }
+
+        button {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
+
+        form input {
+            font-size: 17px;
+        }
+
+        form .fa-location-dot {
+            position: absolute;
+            color: black;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        #access {
+            font-size: 23px;
+            text-align: center;
+        }
+
+        #mainDiv {
+            top: 30%;
+        }
+
+        #city {
+            font-size: 40px;
+        }
+
+        #city_location {
+            font-size: 13px;
+            top: -20px;
+        }
+
+        #temp-f {
+            font-size: 25px;
+        }
+
+        #condition {
+            font-size: 20px;
+        }
+
+        #secondDiv {
+            flex-wrap: wrap;
+            padding: 0px 5px;
+            justify-content: space-around;
+            bottom: 10%;
+        }
+
+        #feel,
+        #humidity,
+        #wind,
+        #visibility {
+            font-size: 25px;
+            padding: 0px 20px;
+            margin-top: 15px;
+        }
+
+        #real-title,
+        #humidity-title,
+        #visibility-title,
+        #wind-title {
+            margin-top: 5px;
+        }
+
+
+
+
+    }
+
+    /* ------------------------------ Medium Mobile ------------------------------ */
+
+
+    /* ------------------------------ Large Mobile ------------------------------ */
+
+    @media screen and (min-width: 376px) and (max-width: 425px) {
+        #dark {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            bottom: 7%;
+        }
+
+        .label {
+            width: 50px;
+            height: 15px;
+            background: var(--light-theme);
+            padding: 5px;
+            position: relative;
+            transform: scale(1.5);
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            top: 2.5px;
+        }
+
+        .moon,
+        .sun {
+            height: 16px;
+            margin: 2px;
+        }
+
+        .checkbox:checked+.label .ball {
+            transform: translateX(33px);
+        }
+
+        nav h2 {
+            position: absolute;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            border: none;
+            font-size: 25px;
+            margin-top: 5px;
+        }
+
+        #nav-head.dark {
+            border-bottom: none;
+        }
+
+        #sun-moon {
+            height: 25px;
+            margin-top: 3px;
+        }
+
+        #current-time {
+            width: 100%;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            top: 7%;
+            right: 0;
+        }
+
+        form {
+            height: 25px;
+            top: 15%;
+            right: 0;
+            left: 75px;
+        }
+
+        button {
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+        }
+
+        form input {
+            font-size: 17px;
+        }
+
+        form .fa-location-dot {
+            position: absolute;
+            color: black;
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        #access {
+            font-size: 23px;
+            text-align: center;
+        }
+
+        #mainDiv {
+            top: 25%;
+        }
+
+        #city {
+            font-size: 45px;
+        }
+
+        #city_location {
+            font-size: 13px;
+            top: -30px;
+        }
+
+        #temp-f {
+            font-size: 30px;
+        }
+
+        #condition {
+            font-size: 25px;
+        }
+
+        #secondDiv {
+            flex-wrap: wrap;
+            padding: 0px 5px;
+            justify-content: space-around;
+            bottom: 14%;
+        }
+
+        #feel,
+        #humidity,
+        #wind,
+        #visibility {
+            font-size: 25px;
+            padding: 0px 20px;
+            margin-top: 15px;
+        }
+
+        #real-title,
+        #humidity-title,
+        #visibility-title,
+        #wind-title {
+            margin-top: 5px;
+        }
+
+
+
+
+    }
+
+    /* ------------------------------ Large Mobile ------------------------------ */
+
+
+    /* ------------------------------ Tablet ------------------------------ */
+
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+        #dark {
+            left: 0;
+            justify-content: center;
+            display: flex;
+            bottom: 8%;
+        }
+    }
+
+    /* ------------------------------ Tablet ------------------------------ */
+
+
+    /* ------------------------------ Laptop ------------------------------ */
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        #dark {
+            left: 0;
+            justify-content: center;
+            display: flex;
+            bottom: 9%;
+        }
+
+        #current-time {
+            top: 2%;
+        }
+
+        nav h2 {
+            font-size: 30px;
+        }
+    }
+
+    /* ------------------------------ Laptop ------------------------------ */
+
+

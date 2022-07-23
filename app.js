@@ -6,6 +6,7 @@ let icon;
 //-------------------- Variables Declared on Global Level --------------------
 
 
+
 //-------------------------------------------------- Weather Using Location -------------------------------------------------- 
 
 
@@ -43,12 +44,12 @@ function onSuccess(position) {
                 .then(function (response) {
                     console.log(response.data);
 
-            //-------------------- Weather Icon --------------------
+                    //-------------------- Weather Icon --------------------
                     icon = response.data.current.condition.icon;
                     icon.replace("/file// ");
                     // console.log(icon);
                     document.getElementById('icon').src = icon;
-            //-------------------- Weather Icon --------------------
+                    //-------------------- Weather Icon --------------------
 
                     document.getElementById('real-title').innerHTML = 'Real Feel';
                     document.getElementById('humidity-title').innerHTML = 'Humidity';

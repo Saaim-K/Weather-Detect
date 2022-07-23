@@ -26,6 +26,20 @@
         overflow: hidden;
     }
 
+    #particles-js {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    body.dark {
+        background: var(--dark-theme);
+        color: #fff;
+        background-attachment: fixed;
+    }
+
     /* ------------------------------ Body With Particles.js ------------------------------ */
 
 
@@ -73,13 +87,6 @@
         margin: 2px;
     }
 
-    body.dark {
-        background: var(--dark-theme);
-        color: #fff;
-        background-attachment: fixed;
-
-    }
-
     .label.dark {
         background: var(--dark-theme);
     }
@@ -93,21 +100,23 @@
 
     /* ------------------------------ Navbar ------------------------------ */
     nav h2 {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         font-weight: 900;
         text-transform: uppercase;
-        position: absolute;
-        left: 41%;
-        border-bottom: 2px solid black;
         font-size: 29px;
+        margin-top: 10px;
     }
 
     #nav-head.dark {
-        border-bottom: 2px solid white;
+        border-bottom: none;
     }
 
     #sun-moon {
         height: 30px;
-        margin-top: 10px;
+        margin-top: 4px;
     }
 
     #current-time {
@@ -115,14 +124,13 @@
         right: 7%;
         top: 3%;
         font-size: 25px;
-        /* margin-top: 10px; */
     }
 
     /* ------------------------------ Navbar ------------------------------ */
 
 
     /* ------------------------------ Input ------------------------------ */
-    .field {
+    form {
         height: 35px;
         width: 290px;
         display: flex;
@@ -145,14 +153,7 @@
         margin: 0 5px;
     }
 
-    .text {
-        font-size: 33px;
-        font-weight: 600;
-        margin-bottom: 35px;
-        color: black;
-    }
-
-    .field input {
+    form input {
         height: 100%;
         width: 100%;
         padding-left: 30px;
@@ -166,12 +167,12 @@
         text-transform: capitalize;
     }
 
-    .field input::placeholder {
+    form input::placeholder {
         color: black;
         font-size: medium;
     }
 
-    .field .fa-location-dot {
+    form .fa-location-dot {
         position: absolute;
         color: black;
         width: 35px;
@@ -270,5 +271,6 @@
         font-weight: 600;
         margin-top: 10px;
     }
+
 
     /* ------------------------------ Weather ------------------------------ */

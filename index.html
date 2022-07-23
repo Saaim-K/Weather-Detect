@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 
+    <!-- ------------------------------ Title Bar Image ------------------------------ -->
     <link rel="icon" href="images/icons8-sun.gif">
+    <!-- ------------------------------ Title Bar Image ------------------------------ -->
 
     <!-- ------------------------------ My Style.CSS ------------------------------ -->
     <link rel="stylesheet" href="style.css">
@@ -33,83 +35,77 @@
 
 </head>
 
-<body>
+<body id="particles-js">
 
-    <div id="particles-js">
-        <!-- ------------------------------ Dark Mode Toggler ------------------------------ -->
-        <div id="dark">
-            <input id="checkbox" type="checkbox" class="checkbox">
-            <label id="label" for="checkbox" class="label">
-                <img class="sun" src="images/icons8-sun.gif" title="Enable Light Mode ">
-                <img class="moon" src="images/icons8-night.gif" title="Enable Dark Mode ">
-                <div id="ball" class='ball'></div>
-            </label>
-        </div>
-        <!-- ------------------------------ Dark Mode Toggler ------------------------------ -->
-
-
-        <!-- ------------------------------ Navbar ------------------------------ -->
-        <nav>
-            <h2 id="nav-head" class="animate__animated animate__lightSpeedInRight">WeatherGuide
-                <img id="sun-moon" src="images/icons8-sun-moon.gif">
-            </h2>
-            <span id="current-time"></span>
-        </nav>
-        <!-- ------------------------------ Navbar ------------------------------ -->
-
-
-        <!-- ------------------------------ Form Input  ------------------------------ -->
-        <form class="field" onsubmit="getWeather(); return false">
-            <input id="input_city" autocomplete="off" type="text" placeholder="Enter Location" required>
-            <i id="input_location" class="fa-solid fa-location-dot"></i>
-            <button id="input-button-1" class="btn-1">
-                <i class="fa fa-light fa-magnifying-glass"></i>
-            </button>
-        </form>
-        <!-- ------------------------------ Form Input  ------------------------------ -->
-
-
-
-
-        <!-- ------------------------------ Displaying Weather  ------------------------------ -->
-        <div id="access"></div>
-        <div id="mainDiv">
-            <div id="city" title="City"></div>
-            <div id="temp-f" title="temp"></div>
-            <div class="icondition">
-                <div id="condition" title="condition"></div>
-                <div id="icon" title="icon"></div>
-            </div>
-        </div>
-        <!-- ------------------------------ Displaying Weather  ------------------------------ -->
-
-
-
-        <!-- ------------------------------ Displaying Weather Attributes ------------------------------ -->
-        <div id="secondDiv">
-            <div id="realfeel">
-                <div id="feel" title="feel"></div>
-                <div id="real-title"></div>
-            </div>
-            <div id="windy">
-                <div id="wind" title="wind"></div>
-                <div id="wind-title"></div>
-            </div>
-
-            <div id="humid">
-                <div id="humidity" title="humidity"></div>
-                <div id="humidity-title"></div>
-            </div>
-            <div id="visible">
-                <div id="visibility" title="visibility"></div>
-                <div id="visibility-title"></div>
-            </div>
-        </div>
-
-        <!-- ------------------------------ Displaying Weather Attributes ------------------------------ -->
-
-
+    <!-- ------------------------------ Dark Mode Toggler ------------------------------ -->
+    <div id="dark">
+        <input id="checkbox" type="checkbox" class="checkbox">
+        <label id="label" for="checkbox" class="label">
+            <img class="sun" src="images/icons8-sun.gif" title="Enable Light Mode ">
+            <img class="moon" src="images/icons8-night.gif" title="Enable Dark Mode ">
+            <div id="ball" class='ball'></div>
+        </label>
     </div>
+    <!-- ------------------------------ Dark Mode Toggler ------------------------------ -->
+
+
+    <!-- ------------------------------ Navbar ------------------------------ -->
+    <nav>
+        <h2 id="nav-head" class="animate__animated animate__lightSpeedInRight">WeatherGuide
+            <img id="sun-moon" src="images/icons8-sun-moon.gif">
+        </h2>
+        <div id="current-time"></div>
+    </nav>
+    <!-- ------------------------------ Navbar ------------------------------ -->
+
+
+    <!-- ------------------------------ Form Input  ------------------------------ -->
+    <form class="field" onsubmit="getWeather(); return false">
+        <input id="input_city" autocomplete="off" type="text" placeholder="Enter Location" required>
+        <i id="input_location" class="fa-solid fa-location-dot"></i>
+        <button id="input-button-1" class="btn-1">
+            <i class="fa fa-light fa-magnifying-glass"></i>
+        </button>
+    </form>
+    <!-- ------------------------------ Form Input  ------------------------------ -->
+
+
+    <!-- ------------------------------ Displaying Weather  ------------------------------ -->
+    <div id="access"></div>
+    <div id="mainDiv">
+        <div id="city" title="City"></div>
+        <div id="temp-f" title="temp"></div>
+        <div class="icondition">
+            <div id="condition" title="condition"></div>
+            <div id="icon" title="icon"></div>
+        </div>
+    </div>
+    <!-- ------------------------------ Displaying Weather  ------------------------------ -->
+
+
+    <!-- ------------------------------ Displaying Weather Attributes ------------------------------ -->
+    <div id="secondDiv">
+        <div id="realfeel">
+            <div id="feel" title="feel"></div>
+            <div id="real-title"></div>
+        </div>
+        <div id="windy">
+            <div id="wind" title="wind"></div>
+            <div id="wind-title"></div>
+        </div>
+
+        <div id="humid">
+            <div id="humidity" title="humidity"></div>
+            <div id="humidity-title"></div>
+        </div>
+        <div id="visible">
+            <div id="visibility" title="visibility"></div>
+            <div id="visibility-title"></div>
+        </div>
+    </div>
+    <!-- ------------------------------ Displaying Weather Attributes ------------------------------ -->
+
+
 </body>
 <!-- ------------------------------ MAIN JAVASCRIPT ------------------------------ -->
 
@@ -125,6 +121,7 @@
 <!-- --------------- My Dark Mode Javascript --------------- -->
 <script src="app.js"></script>
 <!-- --------------- My Dark Mode Javascript --------------- -->
+
 <!-- ------------------------------ MAIN JAVASCRIPT ------------------------------ -->
 
 </html>
