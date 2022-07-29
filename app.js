@@ -93,7 +93,7 @@ function onError(error) {
 function getWeather() {
     let input_city = document.getElementById('input_city').value;
     console.log(input_city);
-    axios.get(`http://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${input_city}`)
+    axios.get(`https://api.weatherapi.com/v1/current.json?key=92203d8e3c314335b7462722223006&q=${input_city}`)
         .then(function (response) {
             console.log(response.data);
             document.getElementById('real-title').innerHTML = 'Real Feel';
